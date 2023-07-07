@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9272e81-53e4-48a1-9b68-f9340131dfb6" name="Changes" comment="Add delete space request">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/tests/CreateTestWithParams.java" afterDir="false" />
+    <list default="true" id="e9272e81-53e4-48a1-9b68-f9340131dfb6" name="Changes" comment="Add parametrized test">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/requests/list/CreateListRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/tests/e2e/UpdateTaskE2ETest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/url/ClickUpUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/url/ClickUpUrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/tests/CreateSpaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/tests/space/CreateSpaceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/tests/CreateSpaceWithParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/tests/space/CreateSpaceWithParamsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,32 +48,47 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.CreateTestWithParams">
+  <component name="RunManager" selected="JUnit.UpdateTaskE2ETest">
     <configuration name="CreateSpaceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ClickUpTestingWithRestAssured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.tests.*" />
+          <option name="PATTERN" value="org.example.tests.space.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.tests" />
-      <option name="MAIN_CLASS_NAME" value="org.example.tests.CreateSpaceTest" />
+      <option name="PACKAGE_NAME" value="org.example.tests.space" />
+      <option name="MAIN_CLASS_NAME" value="org.example.tests.space.CreateSpaceTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateTestWithParams" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CreateSpaceWithParamsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ClickUpTestingWithRestAssured" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.tests.*" />
+          <option name="PATTERN" value="org.example.tests.space.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.tests" />
-      <option name="MAIN_CLASS_NAME" value="org.example.tests.CreateTestWithParams" />
+      <option name="PACKAGE_NAME" value="org.example.tests.space" />
+      <option name="MAIN_CLASS_NAME" value="org.example.tests.space.CreateSpaceWithParamsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UpdateTaskE2ETest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ClickUpTestingWithRestAssured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.tests.e2e.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.tests.e2e" />
+      <option name="MAIN_CLASS_NAME" value="org.example.tests.e2e.UpdateTaskE2ETest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -77,7 +96,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CreateTestWithParams" />
+        <item itemvalue="JUnit.UpdateTaskE2ETest" />
+        <item itemvalue="JUnit.CreateSpaceWithParamsTest" />
         <item itemvalue="JUnit.CreateSpaceTest" />
       </list>
     </recent_temporary>
@@ -133,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688718020666</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add parametrized test">
+      <created>1688718734580</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1688718734580</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,6 +181,7 @@
     <MESSAGE value="Moved request code to dedicated class" />
     <MESSAGE value="Add base request" />
     <MESSAGE value="Add delete space request" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add delete space request" />
+    <MESSAGE value="Add parametrized test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add parametrized test" />
   </component>
 </project>

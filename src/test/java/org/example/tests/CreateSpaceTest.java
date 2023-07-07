@@ -3,18 +3,14 @@ package org.example.tests;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.assertj.core.api.Assertions;
+import org.example.properties.ClickUpProperties;
+import org.example.url.ClickUpUrl;
 import org.json.JSONObject;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
 
 class CreateSpaceTest {
-
-//    {{url}}/team/{{teamId}}/space
-//    9005139548
-
-    private static final String BASE_URL = "https://api.clickup.com/api/v2";
-    private static final String TOKEN = "pk_50695454_ZC3UP6OCOM3V1A4P477RFODFL54NQJAV";
 
     @Test
     void createSpaceTest(){
@@ -23,11 +19,11 @@ class CreateSpaceTest {
         space.put("name", "MY SPACE FROM JAVA");
 
         final Response response = given()
-                .header("Authorization", TOKEN)
+                .header("Authorization", ClickUpProperties.getToken())
                 .contentType(ContentType.JSON)
                 .body(space.toString())
                 .when()
-                .post(BASE_URL + "/team/9005139548/space")
+                .post(ClickUpUrl.getSpacesUrl(ClickUpProperties.getTeamId()))
                 .then()
                 .extract()
                 .response();

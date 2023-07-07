@@ -1,21 +1,18 @@
 package org.example.requests.space;
 
 import io.restassured.response.Response;
-import org.example.properties.ClickUpProperties;
 import org.example.requests.BaseRequest;
 import org.example.url.ClickUpUrl;
-import org.json.JSONObject;
 
 import static io.restassured.RestAssured.given;
 
-public class CreateSpaceRequest {
+public class DeleteSpaceRequest {
 
-    public static Response createSpace(JSONObject space) {
+    public static Response deleteSpace(String spaceId) {
         return given()
                 .spec(BaseRequest.requestSpecWithLogs())
-                .body(space.toString())
                 .when()
-                .post(ClickUpUrl.getSpacesUrl(ClickUpProperties.getTeamId()))
+                .delete(ClickUpUrl.getSpaceUrl(spaceId))
                 .then()
                 .log().ifError()
                 .extract()

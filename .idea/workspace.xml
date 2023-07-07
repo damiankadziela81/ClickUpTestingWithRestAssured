@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9272e81-53e4-48a1-9b68-f9340131dfb6" name="Changes" comment="Add - new e2e test and new request/url">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/requests/task/CreateTaskRequest.java" afterDir="false" />
+    <list default="true" id="e9272e81-53e4-48a1-9b68-f9340131dfb6" name="Changes" comment="Add - new request to e2e test">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/request/CreateTaskRequestDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/url/ClickUpUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/url/ClickUpUrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/requests/task/CreateTaskRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/requests/task/CreateTaskRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/tests/e2e/UpdateTaskE2ETest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/tests/e2e/UpdateTaskE2ETest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -189,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688722685557</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Add - new request to e2e test">
+      <created>1688724750635</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1688724750635</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -213,6 +220,7 @@
     <MESSAGE value="Add parametrized test" />
     <MESSAGE value="Refactor - moved classes to dedicated package" />
     <MESSAGE value="Add - new e2e test and new request/url" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add - new e2e test and new request/url" />
+    <MESSAGE value="Add - new request to e2e test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add - new request to e2e test" />
   </component>
 </project>

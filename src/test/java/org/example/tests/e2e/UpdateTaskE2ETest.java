@@ -3,6 +3,7 @@ package org.example.tests.e2e;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.assertj.core.api.Assertions;
+import org.example.dto.request.CreateTaskRequestDto;
 import org.example.requests.list.CreateListRequest;
 import org.example.requests.space.CreateSpaceRequest;
 import org.example.requests.task.CreateTaskRequest;
@@ -58,21 +59,17 @@ class UpdateTaskE2ETest {
     }
 
     private void createTask(String listId) {
-        JSONObject task = new JSONObject();
-        task.put("name", taskName);
-        task.put("description", "description");
-        task.put("status", "to do");
-        task.put("priority", JSONObject.NULL);
-        task.put("assignees", JSONObject.NULL);
-        task.put("time_estimate", JSONObject.NULL);
-        task.put("parent", JSONObject.NULL);
+        CreateTaskRequestDto taskDto = new CreateTaskRequestDto();
+        taskDto.setName(taskName);
+        taskDto.setDescription("test description");
+        taskDto.setStatus("to do");
 
-        final Response response = CreateTaskRequest.createTask(task, listId);
+        final Response response = CreateTaskRequest.createTask(taskDto, listId);
         Assertions.assertThat(response.statusCode()).isEqualTo(200);
 
         JsonPath jsonData = response.jsonPath();
         Assertions.assertThat(jsonData.getString("name")).isEqualTo(taskName);
-        Assertions.assertThat(jsonData.getString("description")).isEqualTo("description");
+        Assertions.assertThat(jsonData.getString("description")).isEqualTo("test description");
 
         taskId = jsonData.getString("id");
     }

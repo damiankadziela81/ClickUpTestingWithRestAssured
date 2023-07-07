@@ -25,6 +25,7 @@ class CreateSpaceTest {
                 .when()
                 .post(ClickUpUrl.getSpacesUrl(ClickUpProperties.getTeamId()))
                 .then()
+                .log().ifError()
                 .extract()
                 .response();
 

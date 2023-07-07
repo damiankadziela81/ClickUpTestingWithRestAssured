@@ -111,3 +111,6 @@ allure-results/*
 
 # Target
 target/*
+
+# Properties
+!**/src/main/resources/*.properties

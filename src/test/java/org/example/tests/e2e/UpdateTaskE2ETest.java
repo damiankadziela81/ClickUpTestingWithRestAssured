@@ -7,6 +7,7 @@ import org.example.dto.request.CreateTaskRequestDto;
 import org.example.dto.response.CreateTaskResponseDto;
 import org.example.requests.list.CreateListRequest;
 import org.example.requests.space.CreateSpaceRequest;
+import org.example.requests.space.DeleteSpaceRequest;
 import org.example.requests.task.CreateTaskRequest;
 import org.example.requests.task.UpdateTaskRequest;
 import org.json.JSONObject;
@@ -34,6 +35,8 @@ class UpdateTaskE2ETest {
         LOGGER.info("Task created with id: {}", taskId);
         updateTask(taskId);
         LOGGER.info("Task with id: {} updated", taskId);
+        closeTask(taskId);
+        deleteSpace(spaceId);
     }
 
     private void createSpace(){
@@ -88,5 +91,23 @@ class UpdateTaskE2ETest {
         JsonPath json = response.jsonPath();
         Assertions.assertThat(json.getString("name")).isEqualTo("Test task renamed");
         Assertions.assertThat(json.getString("description")).isEqualTo("changed description");
+    }
+
+    private void closeTask(String taskId) {
+        JSONObject taskToClose = new JSONObject();
+        taskToClose.put("status", "complete");
+
+        final Response response = UpdateTaskRequest.updateTask(taskToClose, taskId);
+        Assertions.assertThat(response.statusCode()).isEqualTo(200);
+
+        JsonPath json = response.jsonPath();
+        Assertions.assertThat(json.getString("status.status")).isEqualTo("complete");
+        Assertions.assertThat(json.getString("status.type")).isEqualTo("closed");
+    }
+
+    private void deleteSpace(String spaceId) {
+        final Response response = DeleteSpaceRequest.deleteSpace(spaceId);
+        Assertions.assertThat(response.statusCode()).isEqualTo(200);
+        Assertions.assertThat(response.asString()).isEqualTo("{}");
     }
 }

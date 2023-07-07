@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9272e81-53e4-48a1-9b68-f9340131dfb6" name="Changes" comment="Add error logger">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/requests/space/CreateSpaceRequest.java" afterDir="false" />
+    <list default="true" id="e9272e81-53e4-48a1-9b68-f9340131dfb6" name="Changes" comment="Moved request code to dedicated class">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/requests/BaseRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/tests/CreateSpaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/tests/CreateSpaceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/url/ClickUpUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/url/ClickUpUrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/requests/space/CreateSpaceRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/requests/space/CreateSpaceRequest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688714963161</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Moved request code to dedicated class">
+      <created>1688715470805</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1688715470805</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -115,6 +123,7 @@
     <MESSAGE value="Init commit" />
     <MESSAGE value="Add properties to protect sensitive data and url class to manage urls" />
     <MESSAGE value="Add error logger" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add error logger" />
+    <MESSAGE value="Moved request code to dedicated class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved request code to dedicated class" />
   </component>
 </project>

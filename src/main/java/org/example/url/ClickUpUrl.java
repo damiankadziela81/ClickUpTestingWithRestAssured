@@ -11,11 +11,11 @@ public class ClickUpUrl {
     }
 
     public static String getTeamsUrl() {
-        return BASE_URL + TEAM;
+        return TEAM;
     }
 
     public static String getTeamUrl(String teamId) {
-        return getTeamsUrl() + "/" + teamId;
+        return TEAM + "/" + teamId;
     }
 
     public static String getSpacesUrl(String teamId) {

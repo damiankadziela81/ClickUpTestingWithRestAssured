@@ -8,6 +8,7 @@ import org.example.dto.response.CreateTaskResponseDto;
 import org.example.requests.list.CreateListRequest;
 import org.example.requests.space.CreateSpaceRequest;
 import org.example.requests.task.CreateTaskRequest;
+import org.example.requests.task.UpdateTaskRequest;
 import org.json.JSONObject;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
@@ -24,13 +25,15 @@ class UpdateTaskE2ETest {
     private String taskId;
 
     @Test
-    void udpateTaskE2ETest() {
+    void updateTaskE2ETest() {
         createSpace();
         LOGGER.info("Space created with id: {}", spaceId);
         createList(spaceId);
         LOGGER.info("List created with id: {}", listId);
         createTask(listId);
         LOGGER.info("Task created with id: {}", taskId);
+        updateTask(taskId);
+        LOGGER.info("Task with id: {} updated", taskId);
     }
 
     private void createSpace(){
@@ -72,5 +75,18 @@ class UpdateTaskE2ETest {
 
         LOGGER.info("CREATE TASK RESPONSE OBJ: {}", response);
         taskId = response.getId();
+    }
+
+    private void updateTask(String taskId) {
+        JSONObject updatedTask = new JSONObject();
+        updatedTask.put("name", "Test task renamed");
+        updatedTask.put("description", "changed description");
+
+        final Response response = UpdateTaskRequest.updateTask(updatedTask, taskId);
+        Assertions.assertThat(response.statusCode()).isEqualTo(200);
+
+        JsonPath json = response.jsonPath();
+        Assertions.assertThat(json.getString("name")).isEqualTo("Test task renamed");
+        Assertions.assertThat(json.getString("description")).isEqualTo("changed description");
     }
 }

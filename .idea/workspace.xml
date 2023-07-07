@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9272e81-53e4-48a1-9b68-f9340131dfb6" name="Changes" comment="Refactor - createTask method returns DTO">
+    <list default="true" id="e9272e81-53e4-48a1-9b68-f9340131dfb6" name="Changes" comment="Refactor - added lombok to remove some boilerplate code">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/requests/task/UpdateTaskRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dto/request/CreateTaskRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/request/CreateTaskRequestDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dto/response/CreateTaskCreatorResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/response/CreateTaskCreatorResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dto/response/CreateTaskResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/response/CreateTaskResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dto/response/CreateTaskStatusResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/response/CreateTaskStatusResponseDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/url/ClickUpUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/url/ClickUpUrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/tests/e2e/UpdateTaskE2ETest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/tests/e2e/UpdateTaskE2ETest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,9 +109,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UpdateTaskE2ETest.updateTaskE2ETest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ClickUpTestingWithRestAssured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.tests.e2e.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.tests.e2e" />
+      <option name="MAIN_CLASS_NAME" value="org.example.tests.e2e.UpdateTaskE2ETest" />
+      <option name="METHOD_NAME" value="updateTaskE2ETest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.UpdateTaskE2ETest" />
+        <item itemvalue="JUnit.UpdateTaskE2ETest.updateTaskE2ETest" />
         <item itemvalue="JUnit.UpdateTaskE2ETest.udpateTaskE2ETest" />
         <item itemvalue="JUnit.CreateSpaceWithParamsTest" />
         <item itemvalue="JUnit.CreateSpaceTest" />
@@ -213,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688733876261</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Refactor - added lombok to remove some boilerplate code">
+      <created>1688735324143</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1688735324143</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -240,7 +262,8 @@
     <MESSAGE value="Add - new request to e2e test" />
     <MESSAGE value="Refactor - swithced from JSONObject to POJO for createTask method" />
     <MESSAGE value="Refactor - createTask method returns DTO" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor - createTask method returns DTO" />
+    <MESSAGE value="Refactor - added lombok to remove some boilerplate code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor - added lombok to remove some boilerplate code" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

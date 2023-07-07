@@ -1,4 +1,4 @@
-package org.example.tests;
+package org.example.tests.space;
 
 import io.restassured.response.Response;
 import org.assertj.core.api.Assertions;

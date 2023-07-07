@@ -4,6 +4,7 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.assertj.core.api.Assertions;
 import org.example.dto.request.CreateTaskRequestDto;
+import org.example.dto.response.CreateTaskResponseDto;
 import org.example.requests.list.CreateListRequest;
 import org.example.requests.space.CreateSpaceRequest;
 import org.example.requests.task.CreateTaskRequest;
@@ -64,13 +65,12 @@ class UpdateTaskE2ETest {
         taskDto.setDescription("test description");
         taskDto.setStatus("to do");
 
-        final Response response = CreateTaskRequest.createTask(taskDto, listId);
-        Assertions.assertThat(response.statusCode()).isEqualTo(200);
+        final CreateTaskResponseDto response = CreateTaskRequest.createTask(taskDto, listId);
+        Assertions.assertThat(response.getName()).isEqualTo(taskName);
+        Assertions.assertThat(response.getDescription()).isEqualTo("test description");
+        Assertions.assertThat(response.getStatus().getStatus()).isEqualTo("to do");
 
-        JsonPath jsonData = response.jsonPath();
-        Assertions.assertThat(jsonData.getString("name")).isEqualTo(taskName);
-        Assertions.assertThat(jsonData.getString("description")).isEqualTo("test description");
-
-        taskId = jsonData.getString("id");
+        LOGGER.info("CREATE TASK RESPONSE OBJ: {}", response);
+        taskId = response.getId();
     }
 }

@@ -2,6 +2,7 @@ package org.example.requests.task;
 
 import io.restassured.response.Response;
 import org.example.dto.request.CreateTaskRequestDto;
+import org.example.dto.response.CreateTaskResponseDto;
 import org.example.requests.BaseRequest;
 import org.example.url.ClickUpUrl;
 import org.json.JSONObject;
@@ -22,15 +23,17 @@ public class CreateTaskRequest {
                 .response();
     }
 
-    public static Response createTask(CreateTaskRequestDto taskDto, String listId) {
+    public static CreateTaskResponseDto createTask(CreateTaskRequestDto taskDto, String listId) {
         return given()
                 .spec(BaseRequest.requestSpecWithLogs())
                 .body(taskDto)
                 .when()
                 .post(ClickUpUrl.getTasksUrl(listId))
                 .then()
+                .statusCode(200)
                 .log().ifError()
                 .extract()
-                .response();
+                .response()
+                .as(CreateTaskResponseDto.class);
     }
 }

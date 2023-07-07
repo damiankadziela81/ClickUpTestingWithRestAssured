@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9272e81-53e4-48a1-9b68-f9340131dfb6" name="Changes" comment="Add parametrized test">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/requests/list/CreateListRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/tests/e2e/UpdateTaskE2ETest.java" afterDir="false" />
+    <list default="true" id="e9272e81-53e4-48a1-9b68-f9340131dfb6" name="Changes" comment="Add - new e2e test and new request/url">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/requests/task/CreateTaskRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/url/ClickUpUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/url/ClickUpUrl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/tests/CreateSpaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/tests/space/CreateSpaceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/tests/CreateSpaceWithParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/tests/space/CreateSpaceWithParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/tests/e2e/UpdateTaskE2ETest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/tests/e2e/UpdateTaskE2ETest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,9 +92,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UpdateTaskE2ETest.udpateTaskE2ETest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ClickUpTestingWithRestAssured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.tests.e2e.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.tests.e2e" />
+      <option name="MAIN_CLASS_NAME" value="org.example.tests.e2e.UpdateTaskE2ETest" />
+      <option name="METHOD_NAME" value="udpateTaskE2ETest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.UpdateTaskE2ETest" />
+        <item itemvalue="JUnit.UpdateTaskE2ETest.udpateTaskE2ETest" />
         <item itemvalue="JUnit.CreateSpaceWithParamsTest" />
         <item itemvalue="JUnit.CreateSpaceTest" />
       </list>
@@ -160,7 +175,21 @@
       <option name="project" value="LOCAL" />
       <updated>1688718734580</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Refactor - moved classes to dedicated package">
+      <created>1688722586756</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1688722586756</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add - new e2e test and new request/url">
+      <created>1688722685557</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1688722685557</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -182,6 +211,8 @@
     <MESSAGE value="Add base request" />
     <MESSAGE value="Add delete space request" />
     <MESSAGE value="Add parametrized test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add parametrized test" />
+    <MESSAGE value="Refactor - moved classes to dedicated package" />
+    <MESSAGE value="Add - new e2e test and new request/url" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add - new e2e test and new request/url" />
   </component>
 </project>

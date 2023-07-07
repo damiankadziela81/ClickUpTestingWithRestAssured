@@ -1,5 +1,9 @@
 package org.example.url;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class ClickUpUrl {
 
     private static final String BASE_URL = "https://api.clickup.com/api/v2";

@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9272e81-53e4-48a1-9b68-f9340131dfb6" name="Changes" comment="Add update task request class and step in e2e test">
+    <list default="true" id="e9272e81-53e4-48a1-9b68-f9340131dfb6" name="Changes" comment="Add Allure Reports">
+      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/tests/e2e/UpdateTaskE2ETest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/tests/e2e/UpdateTaskE2ETest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +45,8 @@
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.UpdateTaskE2ETest">
-    <configuration name="CreateSpaceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CreateSpaceWithParamsTest">
+    <configuration name="CreateSpaceTest.createSpaceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ClickUpTestingWithRestAssured" />
       <extension name="coverage">
         <pattern>
@@ -56,7 +56,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example.tests.space" />
       <option name="MAIN_CLASS_NAME" value="org.example.tests.space.CreateSpaceTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="createSpaceTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -125,11 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CreateSpaceWithParamsTest" />
+        <item itemvalue="JUnit.CreateSpaceTest.createSpaceTest" />
         <item itemvalue="JUnit.UpdateTaskE2ETest" />
         <item itemvalue="JUnit.UpdateTaskE2ETest.updateTaskE2ETest" />
         <item itemvalue="JUnit.UpdateTaskE2ETest.udpateTaskE2ETest" />
-        <item itemvalue="JUnit.CreateSpaceWithParamsTest" />
-        <item itemvalue="JUnit.CreateSpaceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -240,7 +241,21 @@
       <option name="project" value="LOCAL" />
       <updated>1688738653885</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Add Close Task and Delete Space steps to e2e test">
+      <created>1688739817052</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1688739817052</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Add Allure Reports">
+      <created>1688741320596</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1688741320596</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -269,7 +284,9 @@
     <MESSAGE value="Refactor - createTask method returns DTO" />
     <MESSAGE value="Refactor - added lombok to remove some boilerplate code" />
     <MESSAGE value="Add update task request class and step in e2e test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add update task request class and step in e2e test" />
+    <MESSAGE value="Add Close Task and Delete Space steps to e2e test" />
+    <MESSAGE value="Add Allure Reports" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Allure Reports" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

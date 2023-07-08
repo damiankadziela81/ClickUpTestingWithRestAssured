@@ -12,7 +12,7 @@ Additionally for few requests you will need {{teamID}} - you can get it from the
 `https://app.clickup.com/{{teamId}}/home`
 
 After cloning this repository provide both values in: 
-../src/main/resources/clickup.properties (create the file)
+../src/main/resources/clickup.properties
 ```
 clickup.token=YOUR_API_TOKEN
 clickup.teamid=YOUR_TEAM_ID

@@ -17,6 +17,11 @@ After cloning this repository provide both values in:
 clickup.token=YOUR_API_TOKEN
 clickup.teamid=YOUR_TEAM_ID
 ```
+
+## Jenkins
+You can run the tests on Jenkins - use this command as Maven Goal in Jenkins Build Step (fill in your token and teamId):
+> clean test -DTOKEN=`YOUR_API_TOKEN` -DTEAM_ID=`YOUR_TEAM_ID`
+
 ## Useful Links
 ### ClickUp REST API documentation for used requests
 https://clickup.com/api/clickupreference/operation/CreateSpace/

@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9272e81-53e4-48a1-9b68-f9340131dfb6" name="Changes" comment="Add properties">
+    <list default="true" id="e9272e81-53e4-48a1-9b68-f9340131dfb6" name="Changes" comment="Add system properties so we can run it on Jenkins">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/properties/ClickUpProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/properties/ClickUpProperties.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688815361052</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Add system properties so we can run it on Jenkins">
+      <created>1688816141109</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1688816141109</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -307,7 +313,8 @@
     <MESSAGE value="Add Allure Reports" />
     <MESSAGE value="Add readme.md" />
     <MESSAGE value="Add properties" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add properties" />
+    <MESSAGE value="Add system properties so we can run it on Jenkins" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add system properties so we can run it on Jenkins" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

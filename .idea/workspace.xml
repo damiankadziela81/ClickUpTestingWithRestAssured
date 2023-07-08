@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9272e81-53e4-48a1-9b68-f9340131dfb6" name="Changes" comment="Add readme.md">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/clickup.properties" afterDir="false" />
+    <list default="true" id="e9272e81-53e4-48a1-9b68-f9340131dfb6" name="Changes" comment="Add properties">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/properties/ClickUpProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/properties/ClickUpProperties.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -263,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688746071665</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Add properties">
+      <created>1688815361052</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1688815361052</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -295,7 +306,8 @@
     <MESSAGE value="Add Close Task and Delete Space steps to e2e test" />
     <MESSAGE value="Add Allure Reports" />
     <MESSAGE value="Add readme.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add readme.md" />
+    <MESSAGE value="Add properties" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add properties" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

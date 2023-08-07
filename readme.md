@@ -22,6 +22,13 @@ clickup.teamid=YOUR_TEAM_ID
 You can run the tests on Jenkins - use this command as Maven Goal in Jenkins Build Step (fill in your token and teamId):
 > clean test -DTOKEN=`YOUR_API_TOKEN` -DTEAM_ID=`YOUR_TEAM_ID`
 
+## Postman Collections
+
+Exported Postman collection with basic E2D test and environment can be found in:
+`.\PostmanCollections\` folder as json files.
+
+For environment you will need to provide your own `token` and `teamId` variables in Postman.
+
 ## Useful Links
 ### ClickUp REST API documentation for used requests
 https://clickup.com/api/clickupreference/operation/CreateSpace/

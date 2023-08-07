@@ -24,7 +24,7 @@ You can run the tests on Jenkins - use this command as Maven Goal in Jenkins Bui
 
 ## Postman Collections
 
-Exported Postman collection with basic E2D test and environment can be found in:
+Exported Postman collection with basic E2E test and environment can be found in:
 `.\PostmanCollections\` folder as json files.
 
 For environment you will need to provide your own `token` and `teamId` variables in Postman.

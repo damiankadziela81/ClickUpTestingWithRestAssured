@@ -38,7 +38,3 @@ https://clickup.com/api/clickupreference/operation/CreateFolderlessList/
 
 https://clickup.com/api/clickupreference/operation/CreateTask/
 https://clickup.com/api/clickupreference/operation/UpdateTask/
-
-### ClickUp API Postman Collection
-
-https://developer.clickup.com/reference/

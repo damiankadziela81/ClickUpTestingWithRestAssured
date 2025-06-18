@@ -41,4 +41,4 @@ https://clickup.com/api/clickupreference/operation/UpdateTask/
 
 ### ClickUp API Postman Collection
 
-https://clickup.com/api/developer-portal/postman/
+https://developer.clickup.com/reference/
